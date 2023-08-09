@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #4A55A2;
+    --sec-color: #F5F5F5;
+    --padding: 24px;
+}
+
+body {
+    background-color: var(--main-color);
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    
+}
+
+.container {
+    width: 100%;
+    min-height: 140vh;
+    color: var(--sec-color);
+    font-family: 'Cairo', sans-serif;
+    padding: 24px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 180px;
+}
+
+.background img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 400;
+    padding-top: 28px;
+    margin-right: 25px;
+}
+
+.date-address {
+    position: relative;
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.date-address::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 10px;
+    right: 0;
+    background-color: rgb(255, 253, 249);
+}
+
+#address {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.date {
+    font-size: 16px;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 24px 0;
+    padding: 24px;
+
+}
+
+.box {
+    text-align: center;
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.prayer {
+    background-color: #7895CB;
+    color: #fff;
+}
+
+.time {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    padding: 24px;
+}
+
+.select-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.select-area #custom-select {
+    padding: 8px;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.custom-select option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 54px;
+        margin-right: 0;
+    }
+}
